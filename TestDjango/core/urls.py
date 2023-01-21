@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import form_contacto
+from .views import home, datos
+
+
 
 urlpatterns = [
-    path('',home, name="home"),
-    path('',inicio,name= "inicio")
+    path('',home,name="home.html"),
+    path('datos',datos,name="datos.html"),
+    
 ]
-
-
-
